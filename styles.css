@@ -1,0 +1,348 @@
+:root{
+    --primary-100:#00FF00;
+    --primary-200:#00df00;
+    --primary-300:#009700;
+    --accent-100:#00FFFF;
+    --accent-200:#00999b;
+    --text-100:#FFFFFF;
+    --text-200:#e0e0e0;
+    --bg-100:#000000;
+    --bg-200:#161616;
+    --bg-300:#2c2c2c;
+}
+
+body{
+    width: 100%;
+    height: 100vh;    
+    font-size: 16px;
+    background: linear-gradient(45deg,var(--primary-300),var(--bg-300),var(--bg-200),var(--accent-200));
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.marco{
+    width: 100%;
+    height: 4rem;    
+    text-align: center;
+    font-size : 4em;
+    color: var(--text-100);
+}
+
+.llamar{
+    position: fixed;
+    top: 80%;
+    right: 13rem;
+    background-color: var(--bg-100);
+    border-radius: 50%;
+    border: 3px solid var(--text-200);
+    box-shadow:  5px 5px 5px var(--accent-200);
+}
+
+.logo{
+    max-width: 6.3rem;    
+    position: fixed;
+    border-radius: 50%;
+    top: 1rem;
+    left: 18rem;
+    border: 3px solid var(--primary-200);
+    box-shadow:  5px 5px 5px rgba(111, 218, 23, 0.25);
+}
+
+h1{
+    background-color: #ccc;
+    background: linear-gradient(90deg,var(--accent-200),var(--primary-200));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 2px 4px 4px var(--bg-200, 0.30);
+}
+
+.marco-accion {
+    width: 60%;
+    display: flex;
+    height: 81vh;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 15rem;
+    background: linear-gradient(var(--bg-100),var(--bg-300));
+    border: 3px solid var(--accent-200);
+    border-radius: 16px;
+    background-color: var(--bg-100);
+}
+
+.area-texto {
+    width: 24em;    
+    margin: 4em;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+textarea {
+    width: 30rem;
+    height: 57vh;
+    border-radius: 25px;    
+    border: none;
+    color: var(--accent-100);
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: var(--bg-200);
+    border: 3px solid var(--accent-200);
+}
+
+.botones {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 4em;
+}
+
+#botonDeEncriptar, #botonDeDesencriptar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background: var(--primary-300);
+    border-radius: 16px;
+    box-shadow: 3px 5px 5px rgba(111, 218, 23, 0.25);
+    color: #E5E5E5;
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 16px;
+}
+    
+
+#botonDeDesencriptar{
+    background:none;
+    border-color:  #0A3871;
+}
+
+#botonDeEncriptar:hover{
+    background: var(--accent-100);
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--bg-100);
+}
+
+#botonDeDesencriptar:hover{
+    background: var(--primary-200);
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--bg-100);
+
+}
+
+.texto-cifrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 2em;
+    margin-top: 4rem;
+    justify-content: center;
+}
+
+.texto-salida {
+    width: 14rem;
+    height: 23rem;
+    margin: 0 0 2rem 0;
+    border-radius: 24px;
+    border: 3px solid var(--accent-200);
+    background-color: var(--primary-300);
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.texto-salida > h4{
+    position: relative;
+    top: 3rem;
+}
+
+.img-texto-salida{
+    position: relative;
+    max-width: 10rem;   
+    top: 4rem;
+}
+
+#botonDeCopiar {    
+    width: 11rem;
+    height: 3.125rem;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(111, 218, 23, 0.25);
+    background: none;
+    border-color: #0A3871;
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 16px;
+    color: var(--text-100);
+}
+
+#botonDeCopiar:hover{
+    background: var(--primary-200);
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--bg-100);
+
+}
+
+#modal{    
+    background-color: var(--bg-300);
+    border: 3px solid var(--accent-200);
+    border-radius: 10px;
+}
+
+#github-logo{
+    max-width: 6.5rem;
+}
+
+#linkedin-logo{
+    max-width: 5rem;
+}
+
+#twitter-logo{
+    max-width: 5rem;
+}
+
+#btn-cerrar-modal{
+    display: block;     
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: var(--primary-200);
+}
+
+@media (max-width: 1000px){
+    body{
+        display: flex;
+        font-size: 16px;
+    }
+
+    .marco{
+        position: relative;
+        left: 5rem;        
+        font-size: 2.5em;
+        width: 9em;
+        margin: auto;
+    }
+
+    .llamar{        
+        top: 80%;
+        right: 2rem;        
+    }
+    
+    .logo{
+        max-width: 3.5rem;            
+        top: 1rem;
+        left: 3rem;        
+    }
+    .marco-accion{
+        width: 87%;
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 7rem;           
+    }
+    .area-texto{    
+        width: 15em;     
+        margin: 0 0 0 8.8em;   
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        flex-direction: column;
+    }
+
+    .botones{
+        gap: 2em;
+    }
+
+    #botonDeEncriptar, #botonDeDesencriptar{
+        font-size: 22px;
+    }
+
+    .texto-cifrado{
+        margin: 0 0 0 2.5em;                
+    }
+
+    .texto-salida{
+        width: 27rem;
+        height: 15rem;
+        font-size: 25px;
+    }
+
+    .texto-salida > h4{
+        position: relative;
+        top: 1rem;
+    }
+    
+    .img-texto-salida{
+        position: relative;
+        max-width: 7rem;   
+        top: 2rem;
+    }
+    
+    
+    #botonDeCopiar {
+        width: 22rem;
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 500px){
+    body{
+        display: flex;
+        font-size: 16px;
+    }
+    .marco-accion{
+        width: 87%;
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.3rem;           
+    }
+    .area-texto{    
+        width: 15em;     
+        margin: 1em 1em 1em 3em;   
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        flex-direction: column;
+    }
+    textarea{
+        width: 22rem;
+        height: 57vh;
+        border-radius: 25px;
+        margin: 0;
+        border: none;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    .botones {
+        width: 77%;
+        padding: 1em 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .texto-cifrado{
+        margin: auto;
+    }
+
+    .texto-salida{
+        width: 21rem;
+        height: 14rem;
+        font-size: 24px;
+    }
+
+    #botonDeCopiar {
+        width: 13rem;
+        font-size: 24px;
+    }
+
+}

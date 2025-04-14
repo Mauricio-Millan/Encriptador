@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <script src="scriptEncriptador.js" type="text/javascript" defer></script>
+    <title>Encriptador</title>
+</head>
+<body>
+   <div class="cover">
+        <header>
+            <div class="marco">
+                <h1>Encriptador</h1>                                   
+            </div>
+        </header> 
+        <main >
+            <a href="https://www.aluracursos.com/" alt="Logo de Alura Latam" target="_blank">
+                <img src="./assets/alura.jpg"  class="logo">
+            </a>                       
+            <section class="marco-accion">
+                <div class="area-texto">
+                    <form action="">
+                        <textarea name="" id="escribir" cols="30" rows="10" placeholder="Escriba su mensaje secreto en minúsculas y sin acento"></textarea>
+                        <div class="botones">
+                            <input id="botonDeEncriptar" type="button" value="Encriptar" onclick="">
+                            <input id="botonDeDesencriptar" type="button" value="Desencriptar" onclick="">
+                        </div>
+                    </form>        
+                </div>       
+                <div class="texto-cifrado">
+                    <div class="texto-salida">
+                        <h4>Aquí aparece el mensaje encriptado</h4>
+                        <img src="./assets/hackbook.png" class="img-texto-salida">                   
+                    </div>
+                    <div>
+                        <input id="botonDeCopiar" type="button" value="Copiar" onclick="">
+                    </div>
+                </div>  
+            </section>   
+            <button id="btn-abrir-modal">
+                <lord-icon class="llamar"
+                    src="https://cdn.lordicon.com/ssvybplt.json"
+                    trigger="hover"
+                    colors="primary:#16c72e"
+                    style="width:80px;height:80px">
+                </lord-icon>   
+            </button>      
+            <dialog id="modal">
+                <a href="https://github.com/FernandoAryBarraza" target="_blank"><img src="./assets/githubb.png" id="github-logo"></a>
+                <a href="https://www.linkedin.com/in/fernando-barraza-a403b3230" target="_blank"><img src="./assets/linkedin.png" id="linkedin-logo"></a>
+                <a href="https://twitter.com/aryelbarra?t=Z0xFA-L2q27bZ_P7X-dp3g&s=09" target="_blank"><img src="./assets/gorjeo.png" id="twitter-logo"></a>
+                <button id="btn-cerrar-modal">X</button>
+            </dialog>   
+        </main>   
+   </div>
+</body>
+</html>
